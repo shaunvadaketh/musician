@@ -35,6 +35,10 @@ class Band(object):
     def fire_member(self, member):
         self.members.remove(member)
         print ("Now your band consists of:{1} ".format(self.members))
+        
+    def play_music(self):
+        for x in members:
+            print (x.solo(6))
 
 
 if __name__ == '__main__':
@@ -42,8 +46,9 @@ if __name__ == '__main__':
     bassist = Bassist()
     guitarist = Guitarist()
     drummer = Drummer()
-    
-    band = Band([bassist, guitarist, drummer])
-    
+    members = [bassist, guitarist, drummer]
+    band = Band([members])
+    drummer.count()
+    band.play_music()
     
     
